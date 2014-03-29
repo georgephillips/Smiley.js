@@ -1,0 +1,87 @@
+.smiley,
+.smiley .middle-mouth,
+.smiley .high-mouth,
+.smiley .low-mouth,
+.smiley .nose{
+	position:relative;
+	cursor:pointer;
+	display:block;
+	white-space:nowrap;
+	
+	-webkit-rotation-point:75% 50%;
+	-webkit-transition:all 1s ease, color 0.5s;
+	   -moz-transition:all 1s ease, color 0.5s;
+	     -o-transition:all 1s ease, color 0.5s;
+	        transition:all 1s ease, color 0.5s;
+}
+
+.smiley .middle-mouth,
+.smiley .high-mouth,
+.smiley .low-mouth,
+.smiley .nose{
+	-webkit-rotation-point:75% 50%;
+	-webkit-transition:all 1s ease, color 0s;
+	   -moz-transition:all 1s ease, color 0s;
+	     -o-transition:all 1s ease, color 0s;
+	        transition:all 1s ease, color 0s;
+	display:inline-block;
+	white-space:nowrap;
+}
+
+.smiley-wrapper{
+	display:inline-block;
+}
+
+.smiley{
+	-webkit-rotation-point:50% 50%;
+	font-family:Arial;
+	font-weight:bold;
+	left:4%;
+}
+
+.smiley-reverse{
+	left:-4%;
+}
+
+.smiley.active{
+	-webkit-transform:rotate(90deg);
+	   -moz-transform:rotate(90deg);
+	    -ms-transform:rotate(90deg);
+	     -o-transform:rotate(90deg);
+	        transform:rotate(90deg);
+}
+
+.smiley-reverse.active{
+	-webkit-transform:rotate(-90deg);
+	   -moz-transform:rotate(-90deg);
+	    -ms-transform:rotate(-90deg);
+	     -o-transform:rotate(-90deg);
+	        transform:rotate(-90deg);
+}
+
+.smiley.active .low-mouth{
+	-webkit-transform:translate(0px, -8%);
+	   -moz-transform:translate(0px, -8%);
+	    -ms-transform:translate(0px, -8%);
+	     -o-transform:translate(0px, -8%);
+	        transform:translate(0px, -8%);
+	display:inline-block;
+}
+
+.smiley.active .middle-mouth{
+	-webkit-transform:translate(0px, 8%);
+	   -moz-transform:translate(0px, 8%);
+	    -ms-transform:translate(0px, 8%);
+	     -o-transform:translate(0px, 8%);
+	        transform:translate(0px, 8%);
+	display:inline-block;
+}
+
+.smiley.active .high-mouth{
+	-webkit-transform:translate(0px, 25%);
+	   -moz-transform:translate(0px, 25%);
+	    -ms-transform:translate(0px, 25%);
+	     -o-transform:translate(0px, 25%);
+	        transform:translate(0px, 25%);
+	display:inline-block;
+}
