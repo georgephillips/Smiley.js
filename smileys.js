@@ -9,7 +9,11 @@
 			":-)",
 			":-(",
 			":-O",
-			":-D"
+			":-D",
+			";)",
+			";-)",
+			":P",
+			"xD"
 		],
 		extras = {
 			"<3": true,
@@ -21,12 +25,14 @@
 			"d": "middle-mouth",
 			"p": "low-mouth",
 			"*": "high-mouth",
-			"-": "nose"
+			"-": "nose",
+			"P": "middle-mouth"
 		},
 		oppositeSmileParts = {
 			"p": "d",
 			")": "(",
-			"(": ")"
+			"(": ")",
+			"P": "d"
 		},
 		reverseSmileys = [];
 
